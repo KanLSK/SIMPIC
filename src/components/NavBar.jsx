@@ -21,7 +21,9 @@ const NavBar = () => {
   }, [pathname])
 
   return (
-    <div className={`${showNavBar ? "w-screen flex justify-around items-center p-4 absolute z-10" : "hidden"}`}>
+    <nav>
+      {/** desktop navbar */}
+      <div className={`${showNavBar ? "w-screen hidden md:flex justify-around items-center p-4 absolute z-10" : "hidden"}`}>
         <NavLink to="/">SIMPIC2025</NavLink>
         <div className='flex gap-5 items-center'>
           <NavLink to="/about">About us</NavLink>
@@ -32,7 +34,10 @@ const NavBar = () => {
           <NavLink to="/login" className='transition ease-in-out delay-150 px-8 py-4 bg-[rgba(247,247,247,1)] hover:-translate-y-1 hover:scale-110 hover:bg-gray-100 duration-300 rounded-md'>Log In</NavLink>
           <NavLink to="/signup" className='transition ease-in-out delay-150 px-8 py-4 text-white bg-black hover:-translate-y-1 hover:scale-110 hover:bg-gray-900 duration-300 rounded-md'>Sign Up</NavLink>
         </div>
-    </div>
+      </div>
+      {/** mobile navbar */}
+      <div></div>
+    </nav>
   )
 }
 

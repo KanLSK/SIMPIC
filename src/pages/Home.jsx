@@ -11,7 +11,7 @@ const Home = ({ user }) => {
   return (
     <div className='min-w-screen min-h-screen bg-[rgba(255,255,255,1)] flex flex-col'>
         <div className='relative bg-cover w-screen h-[750px] flex justify-center items'>
-            <img src={pic} alt="microbio" className='h-[750px] w-screen opacity-40'/>
+            <img src={pic} alt="microbio" className='h-[750px] w-screen opacity-40 bg-fixed'/>
             {/** when login */}
             <div className='absolute text-center flex flex-col gap-3'>
               <div className='relative w-screen h-[750px] flex flex-col justify-center items-center gap-4'>
@@ -24,7 +24,7 @@ const Home = ({ user }) => {
             </div>
         </div>
         {/** first section */}
-        <section className='flex flex-wrap w-full justify-between items-center h-[500px] px-20'>
+        <section className='flex flex-wrap w-full justify-between items-center h-[500px] px-10 md:px-20'>
            <div className='flex flex-col gap-5'>
                 <p className='font-bold text-4xl'>The new style competition</p>
                 <p className='font-light text-gray-500'>The new style of competition never seen before!</p>
@@ -35,7 +35,7 @@ const Home = ({ user }) => {
            </div>
         </section>
         {/** second section */}
-        <section className='flex flex-wrap w-full h-fit justify-between items-center px-20'>
+        <section className='flex flex-wrap w-full h-fit justify-between items-center px-10 md:px-20'>
           <div>
             <img src={square} alt="scare" />
           </div>

@@ -7,7 +7,7 @@ const Login = () => {
     
   return (
     <div className='min-w-screen min-h-screen flex justify-center items-center'>
-        <div className='flex flex-col w-[30%] gap-4 text-center'>
+        <div className='flex flex-col w-[80%] md:w-[30%] gap-4 text-center'>
             <p className='text-2xl font-bold'>Log into SIMPIC 2025</p>
             <p>Enter your email to continue</p>
             <input type="email" value={email} onChange={(e) => setEmail(e?.target.value)} placeholder='johndoe@gmail.com' className='border-[1px] border-gray-400 rounded-md px-2 py-3'/>
