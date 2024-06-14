@@ -8,12 +8,14 @@ import Contact from './pages/Contact';
 import Competition from './pages/Competition';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import Form from './pages/Form';
+import Merchandise from './pages/Merchandise';
 
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 const App = () => {
 
-  const user = true
+  const user = false
 
   return (
     <div className='w-screen h-screen relative overflow-x-hidden'>
@@ -28,6 +30,8 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/merchandise" element={<Merchandise />} />
+          <Route exact path="/form" element={user ? (<Form />) : <Navigate replace to={"/signup"} /> } />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
