@@ -63,7 +63,7 @@ const Home = ({ user }) => {
             <img src={square} alt="scare" />
           </div>
           <div className='flex flex-col justify-around'>
-            <div className='flex gap-4 mb-10'>
+            <div className='flex gap-4 mb-10 mt-8 md:mt-0'>
               <p className='text-4xl font-bold'>Merchandise</p>
               <NavLink to="/merchandise">
                 <img src={arrow} alt="arrow" className='w-[40px] h-[40px]'/>
@@ -90,56 +90,56 @@ const Home = ({ user }) => {
           </div>
         </section>
         {/** third section */}
-        <section className='flex flex-col w-screen max-w-screen-2xl justify-between items-center mt-[7em] px-20'>
-          <div className={`${bgColor} h-[675px] w-full flex flex-col justify-between rounded-lg`}>
-            <p className='text-4xl font-bold p-8'>More than a competition</p>
-            <div>
-              <div className='flex w-full justify-around'>
+        <section className='flex flex-col w-screen max-w-screen-2xl justify-between items-center mt-[7em] px-4 md:px-20'>
+          <div className={`${bgColor} min-h-[675px] w-full flex flex-col justify-between rounded-lg p-2`}>
+            <p className='text-4xl font-bold p-4 md:p-8'>More than a competition</p>
+            <div className=''>
+              <div className='flex gap-4 md:gap-0 flex-wrap md:flex-nowrap w-full justify-around'>
                 <div className='transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 bg-[rgba(255,171,171,1)] hover:bg-[rgb(230,193,205)]  px-3 py-4 rounded-lg' onMouseEnter={() => setMouseEnter("one")} onMouseLeave={() => setMouseEnter("zero")}>
-                  <p className='text-lg mb-2'>Welcome Dinner</p>
-                  <p className='text-[rgba(130,130,130,1)] font-extralight'>
+                  <p className='text-md md:text-lg mb-2'>Welcome Dinner</p>
+                  <p className='text-[rgba(130,130,130,1)] font-extralight text-xs md:text-md'>
                     Body text for whatever you'd like to type. Add main
                     <br/>takeaway points, quotes, anecdotes, or even a very
                     <br/>very short story.
                   </p>
                 </div>
                 <div className='transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 bg-[rgba(255,171,171,1)] hover:bg-[rgb(230,193,205)]  px-3 py-4 rounded-lg' onMouseEnter={() => setMouseEnter("two")} onMouseLeave={() => setMouseEnter("zero")}>
-                  <p className='text-lg mb-2'>Conference</p>
-                  <p className='text-[rgba(130,130,130,1)] font-extralight'>
+                  <p className='text-md md:text-lg mb-2'>Conference</p>
+                  <p className='text-[rgba(130,130,130,1)] font-extralight text-xs md:text-md'>
                     Body text for whatever you'd like to type. Add main
                     <br/>takeaway points, quotes, anecdotes, of even a very
                     <br/>very short story.
                   </p>
                 </div>
                 <div className='transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 bg-[rgba(255,171,171,1)] hover:bg-[rgb(230,193,205)]  px-3 py-4 rounded-lg' onMouseEnter={() => setMouseEnter("three")} onMouseLeave={() => setMouseEnter("zero")}>
-                  <p className='text-lg mb-2'>Night Party</p>
-                  <p className='text-[rgba(130,130,130,1)] font-extralight'>
+                  <p className='text-md md:text-lg mb-2'>Night Party</p>
+                  <p className='text-[rgba(130,130,130,1)] font-extralight text-xs md:text-md'>
                     Body text for whatever you'd like to type. Add main
                     <br/>takeaway points, quotes, anecdotes, of even a very
                     <br/>very short story.
                   </p>
                 </div>
               </div>
-              <div className='flex w-full justify-around mt-10 mb-10'>
+              <div className='flex gap-4 my-4 md:gap-0 flex-wrap md:flex-nowrap w-full justify-around'>
                 <div className='transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 bg-[rgba(255,171,171,1)] hover:bg-[rgb(230,193,205)] px-3 py-4 rounded-lg' onMouseEnter={() => setMouseEnter("four")} onMouseLeave={() => setMouseEnter("zero")}>
-                  <p className='text-lg mb-2'>Museum Tour</p>
-                  <p className='text-[rgba(130,130,130,1)] font-extralight'>
+                  <p className='text-md md:text-lg mb-2'>Museum Tour</p>
+                  <p className='text-[rgba(130,130,130,1)] font-extralight text-xs md:text-md'>
                     Body text for whatever you'd like to type. Add main
                     <br/>takeaway points, quotes, anecdotes, of even a very
                     <br/>very short story.
                   </p>
                 </div>
                 <div className='transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 bg-[rgba(255,171,171,1)] hover:bg-[rgb(230,193,205)]  px-3 py-4 rounded-lg' onMouseEnter={() => setMouseEnter("five")} onMouseLeave={() => setMouseEnter("zero")}>
-                  <p className='text-lg mb-2'>Cultural Excursion</p>
-                  <p className='text-[rgba(130,130,130,1)] font-extralight'>
+                  <p className='text-md md:text-lg mb-2'>Cultural Excursion</p>
+                  <p className='text-[rgba(130,130,130,1)] font-extralight text-xs md:text-md'>
                     Body text for whatever you'd like to type. Add main
                     <br/>takeaway points, quotes, anecdotes, of even a very
                     <br/>very short story.
                   </p>
                 </div>
                 <div className='transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 bg-[rgba(255,171,171,1)] hover:bg-[rgb(230,193,205)]  px-3 py-4 rounded-lg' onMouseEnter={() => setMouseEnter("six")} onMouseLeave={() => setMouseEnter("zero")}> 
-                  <p className='text-lg mb-2'>Community</p>
-                  <p className='text-[rgba(130,130,130,1)] font-extralight'>
+                  <p className='text-md md:text-lg mb-2'>Community</p>
+                  <p className='text-[rgba(130,130,130,1)] font-extralight text-xs md:text-md'>
                     Body text for whatever you'd like to type. Add main
                     <br/>takeaway points, quotes, anecdotes, of even a very
                     <br/>very short story.
