@@ -12,7 +12,6 @@ const Home = ({ user }) => {
   const [bgColor, setBgColor] = useState("bg-[rgba(217,217,217,1)]")
 
   useEffect(() => {
-    console.log(mouseEnter == "two")
 
     if (mouseEnter === "one") {
       setBgColor("bg-[rgb(239,238,220)]")
@@ -38,8 +37,8 @@ const Home = ({ user }) => {
             {/** when login */}
             <div className='absolute text-center flex flex-col gap-3'>
               <div className='relative w-screen max-w-screen-2xl h-[750px] flex flex-col justify-center items-center gap-4'>
-                <p className='text-[64px] text-black font-extrabold'>SIMPIC 2025</p>
-                <p className='text-[24px]'>
+                <p className='text-[48px] md:text-[64px] text-black font-extrabold'>SIMPIC 2025</p>
+                <p className='text-[16px] md:text-[24px]'>
                   The 14th Siriraj International Medical Microbiology, Parasitology, and <br/>Immunology Competition
                 </p>
                 <NavLink to="/form" className='transition-all ease-in-out duration-300 delay-150 hover:-traanslate-y-1 hover:scale-110 bg-black hover:bg-gray-800 text-white w-fit px-4 py-3 rounded-lg'>Register Now</NavLink>
@@ -47,7 +46,7 @@ const Home = ({ user }) => {
             </div>
         </div>
         {/** first section */}
-        <section className='flex flex-wrap w-full max-w-screen-2xl justify-between items-center h-[500px] px-10 md:px-20'>
+        <section className='flex flex-wrap w-full max-w-screen-2xl justify-between items-center h-[500px] px-4 md:px-20'>
            <div className='flex flex-col gap-5'>
                 <p className='font-bold text-4xl'>The new style competition</p>
                 <p className='font-light text-gray-500'>The new style of competition never seen before!</p>
@@ -58,7 +57,7 @@ const Home = ({ user }) => {
            </div>
         </section>
         {/** second section */}
-        <section className='flex flex-wrap w-full max-w-screen-2xl h-fit justify-between items-center px-10 md:px-20'>
+        <section className='flex flex-wrap w-full max-w-screen-2xl h-fit justify-between items-center px-4 md:px-20'>
           <div>
             <img src={square} alt="scare" />
           </div>
@@ -150,9 +149,9 @@ const Home = ({ user }) => {
           </div>
         </section>
         {/** fourth section */}
-        <section className='flex flex-col w-screen max-w-screen-2xl justify-between items-center mt-[7em] px-20'>
+        <section className='flex flex-col w-screen max-w-screen-2xl justify-between items-center mt-[5em]  px-4 md:px-20'>
           <div>
-            <p className='text-4xl font-bold'>What happens at SIMPIC last year</p>
+            <p className='text-xl md:text-4xl font-bold'>What happens at SIMPIC last year</p>
           </div>
         </section>
     </div>

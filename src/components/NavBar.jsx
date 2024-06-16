@@ -25,7 +25,7 @@ const NavBar = () => {
       {/** desktop navbar */}
       <div className={`${showNavBar ? "w-screen hidden md:flex justify-around items-center p-4 absolute z-10" : "hidden"}`}>
         <NavLink to="/">SIMPIC2025</NavLink>
-        <div className='flex gap-5 items-center'>
+        <div className='flex md:gap-5 items-center'>
           <NavLink to="/about">About us</NavLink>
           <NavLink to="/program">Program</NavLink>
           <NavLink to="/competition">Competition</NavLink>

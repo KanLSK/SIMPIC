@@ -22,8 +22,8 @@ const About = () => {
     <div className='mt-[15em] w-screen h-screen flex justify-center'>
         <div className='w-[75vw] h-full'>
             <section>
-                <p className='text-7xl font-bold'>About SIMPIC</p>
-                <div className='flex flex-col gap-4 mt-[4em] text-[20px] text-[rgba(0,0,0,1)] font-extralight'>
+                <p className='text-7xl font-bold text-center lg:text-start'>About SIMPIC</p>
+                <div className='flex flex-col gap-4 mt-[4em] text-[20px] text-[rgba(0,0,0,1)] font-extralight text-center lg:text-start'>
                     <p>
                         Welcome to Siriraj International Medical Microbiology, Parasitology, and Immunoloogy Competition (SIMPIC2025) !
                         <br/>As a prestigious and globally recognized event, we take immense pride in helding space and opportunities that bring
@@ -41,10 +41,10 @@ const About = () => {
                     </p>
                 </div>
             </section>
-            <section className='flex mt-[10em] items-center'>
-                <div className='w-[70%]'>
-                    <p className='text-7xl font-bold'>President Message</p>
-                    <div className='flex flex-col gap-4 mt-[4em] text-[20px] text-[rgba(0,0,0,1)] font-extralight'>
+            <section className='flex flex-wrap-reverse lg:flex-nowrap mt-[10em] justify-center items-center'>
+                <div className='lg:w-[70%]'>
+                    <p className='text-7xl font-bold text-center lg:text-start'>President Message</p>
+                    <div className='flex flex-col gap-4 mt-[4em] text-[20px] text-[rgba(0,0,0,1)] font-extralight text-center lg:text-start'>
                         <p>
                             With the year gone by, the wait is now done.
                             <br/>Our annual competition is back for everyone!
