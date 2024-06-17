@@ -42,7 +42,7 @@ const About = () => {
                 </div>
             </section>
             <section className='flex flex-wrap-reverse lg:flex-nowrap mt-[10em] justify-center items-center'>
-                <div className='lg:w-[70%]'>
+                <div className='lg:w-[70%] mt-[4em] lg:mt-0'>
                     <p className='text-7xl font-bold text-center lg:text-start'>President Message</p>
                     <div className='flex flex-col gap-4 mt-[4em] text-[20px] text-[rgba(0,0,0,1)] font-extralight text-center lg:text-start'>
                         <p>
@@ -87,48 +87,48 @@ const About = () => {
                 <p className='text-7xl font-bold'>History</p>
                 <div className='flex flex-col items-center mt-[3em] gap-5'>
                     <div 
-                        className={`transition-all duration-300 ease-in-out w-[516px] hover:-translate-y-1 hover:scale-105 ${open.simpic2024 ? "max-h-[129px]" : "max-h-[84px]"} flex gap-3 items-center px-4 py-4 bg-gradient-to-r from-[rgba(251,166,166,1)] to-[rgba(232,201,122,1)] rounded-lg cursor-pointer`} 
+                        className={`transition-all duration-300 ease-in-out w-full max-w-[516px] hover:-translate-y-1 hover:scale-105 ${open.simpic2024 ? "max-h-[129px]" : "max-h-[84px]"} flex gap-3 items-center px-4 py-4 bg-gradient-to-r from-[rgba(251,166,166,1)] to-[rgba(232,201,122,1)] rounded-lg cursor-pointer`} 
                         onClick={() => changeDisplay("simpic2024")}
                     >
                         <p className='flex items-center text-[24px] font-bold'>SIMPIC2024</p>
                         <p className={`${open.simpic2024 ? "w-[1px] h-[80px] bg-black" : "hidden"}`}></p>
-                        <p className={`${open.simpic2024 ? "block" : "hidden"}`}>
+                        <p className={`${open.simpic2024 ? "block text-xs lg:text-md" : "hidden"}`}>
                             Journery into a small world of
                             <br/>microbio,
                             <br/>immuno, and parasito
                         </p>
                     </div>
                     <div 
-                        className={`transition-all duration-300 ease-in-out w-[516px] hover:-translate-y-1 hover:scale-105 ${open.simpic2023 ? "max-h-[129px]" : "max-h-[84px]"} flex gap-3 items-center px-4 py-4 bg-gradient-to-r from-[rgba(251,166,166,1)] to-[rgba(232,201,122,1)] rounded-lg cursor-pointer`} 
+                        className={`transition-all duration-300 ease-in-out w-full max-w-[516px] hover:-translate-y-1 hover:scale-105 ${open.simpic2023 ? "max-h-[129px]" : "max-h-[84px]"} flex gap-3 items-center px-4 py-4 bg-gradient-to-r from-[rgba(251,166,166,1)] to-[rgba(232,201,122,1)] rounded-lg cursor-pointer`} 
                         onClick={() => changeDisplay("simpic2023")}
                     >
                         <p className='flex items-center text-[24px] font-bold'>SIMPIC2023</p>
                         <p className={`${open.simpic2023 ? "w-[1px] h-[80px] bg-black" : "hidden"}`}></p>
-                        <p className={`${open.simpic2023 ? "block" : "hidden"}`}>
+                        <p className={`${open.simpic2023 ? "block text-xs lg:text-md" : "hidden"}`}>
                             Journery into a small world of
                             <br/>microbio,
                             <br/>immuno, and parasito
                         </p>
                     </div>
                     <div 
-                        className={`transition-all duration-300 ease-in-out w-[516px] hover:-translate-y-1 hover:scale-105 ${open.simpic2022 ? "max-h-[129px]" : "max-h-[84px]"} flex gap-3 items-center px-4 py-4 bg-gradient-to-r from-[rgba(251,166,166,1)] to-[rgba(232,201,122,1)] rounded-lg cursor-pointer`} 
+                        className={`transition-all duration-300 ease-in-out w-full max-w-[516px] hover:-translate-y-1 hover:scale-105 ${open.simpic2022 ? "max-h-[129px]" : "max-h-[84px]"} flex gap-3 items-center px-4 py-4 bg-gradient-to-r from-[rgba(251,166,166,1)] to-[rgba(232,201,122,1)] rounded-lg cursor-pointer`} 
                         onClick={() => changeDisplay("simpic2022")}
                     >
                         <p className='flex items-center text-[24px] font-bold'>SIMPIC2022</p>
                         <p className={`${open.simpic2022 ? "w-[1px] h-[80px] bg-black" : "hidden"}`}></p>
-                        <p className={`${open.simpic2022 ? "block" : "hidden"}`}>
+                        <p className={`${open.simpic2022 ? "block text-xs lg:text-md" : "hidden"}`}>
                             Journery into a small world of
                             <br/>microbio,
                             <br/>immuno, and parasito
                         </p>
                     </div>
                     <div 
-                        className={`transition-all duration-300 ease-in-out mb-[15em] w-[516px] hover:-translate-y-1 hover:scale-105 ${open.simpic2022 ? "max-h-[129px]" : "max-h-[84px]"} flex gap-3 items-center px-4 py-4 bg-gradient-to-r from-[rgba(251,166,166,1)] to-[rgba(232,201,122,1)] rounded-lg cursor-pointer`} 
+                        className={`transition-all duration-300 ease-in-out mb-[15em] w-full max-w-[516px] hover:-translate-y-1 hover:scale-105 ${open.simpic2022 ? "max-h-[129px]" : "max-h-[84px]"} flex gap-3 items-center px-4 py-4 bg-gradient-to-r from-[rgba(251,166,166,1)] to-[rgba(232,201,122,1)] rounded-lg cursor-pointer`} 
                         onClick={() => changeDisplay("simpic2021")}
                     >
                         <p className='flex items-center text-[24px] font-bold'>SIMPIC2021</p>
                         <p className={`${open.simpic2021 ? "w-[1px] h-[80px] bg-black" : "hidden"}`}></p>
-                        <p className={`${open.simpic2021 ? "block" : "hidden"}`}>
+                        <p className={`${open.simpic2021 ? "block text-xs lg:text-md" : "hidden"}`}>
                             Journery into a small world of
                             <br/>microbio,
                             <br/>immuno, and parasito
