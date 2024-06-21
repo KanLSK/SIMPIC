@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { schedulesDay1,schedulesDay2, schedulesDay3, schedulesDay4 } from "../constants";
+import Carousel from "../components/Carousel";
 
 const Program = () => {
   const [selectDay, setSelectDay] = useState({
@@ -186,6 +187,9 @@ const Program = () => {
       </div>
       <div className="w-[75%] mt-[5em]">
         <p className="text-6xl text-center w-full font-bold">Activities</p>
+        <div className="max-w-full">
+          <Carousel />
+        </div>
       </div>
     </section>
   );
