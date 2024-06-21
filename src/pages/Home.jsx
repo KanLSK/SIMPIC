@@ -59,7 +59,7 @@ const Home = ({ user }) => {
         {/** second section */}
         <section className='flex flex-wrap w-full max-w-screen-2xl h-fit justify-between items-center px-4 md:px-20'>
           <div>
-            <img src={square} alt="scare" />
+            <img src={square} alt="scare"/>
           </div>
           <div className='flex flex-col justify-around'>
             <div className='flex gap-4 mb-10 mt-8 md:mt-0'>
@@ -89,11 +89,11 @@ const Home = ({ user }) => {
           </div>
         </section>
         {/** third section */}
-        <section className='flex flex-col w-screen max-w-screen-2xl justify-between items-center mt-[7em] px-4 md:px-20'>
+        <section className='flex flex-col w-screen max-w-screen-2xl justify-between items-center mt-[7em] px-4 lg:px-20'>
           <div className={`${bgColor} min-h-[675px] w-full flex flex-col justify-between rounded-lg p-2`}>
-            <p className='text-4xl font-bold p-4 md:p-8'>More than a competition</p>
+            <p className='text-4xl font-bold p-4 lg:p-8'>More than a competition</p>
             <div className=''>
-              <div className='flex gap-4 md:gap-0 flex-wrap md:flex-nowrap w-full justify-around'>
+              <div className='flex gap-4 lg:gap-0 flex-wrap md:flex-nowrap w-full justify-around'>
                 <div className='transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 bg-[rgba(255,171,171,1)] hover:bg-[rgb(230,193,205)]  px-3 py-4 rounded-lg' onMouseEnter={() => setMouseEnter("one")} onMouseLeave={() => setMouseEnter("zero")}>
                   <p className='text-md md:text-lg mb-2'>Welcome Dinner</p>
                   <p className='text-[rgba(130,130,130,1)] font-extralight text-xs md:text-md'>
@@ -103,7 +103,7 @@ const Home = ({ user }) => {
                   </p>
                 </div>
                 <div className='transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 bg-[rgba(255,171,171,1)] hover:bg-[rgb(230,193,205)]  px-3 py-4 rounded-lg' onMouseEnter={() => setMouseEnter("two")} onMouseLeave={() => setMouseEnter("zero")}>
-                  <p className='text-md md:text-lg mb-2'>Conference</p>
+                  <p className='text-md lg:text-lg mb-2'>Conference</p>
                   <p className='text-[rgba(130,130,130,1)] font-extralight text-xs md:text-md'>
                     Body text for whatever you'd like to type. Add main
                     <br/>takeaway points, quotes, anecdotes, of even a very
@@ -111,7 +111,7 @@ const Home = ({ user }) => {
                   </p>
                 </div>
                 <div className='transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 bg-[rgba(255,171,171,1)] hover:bg-[rgb(230,193,205)]  px-3 py-4 rounded-lg' onMouseEnter={() => setMouseEnter("three")} onMouseLeave={() => setMouseEnter("zero")}>
-                  <p className='text-md md:text-lg mb-2'>Night Party</p>
+                  <p className='text-md lg:text-lg mb-2'>Night Party</p>
                   <p className='text-[rgba(130,130,130,1)] font-extralight text-xs md:text-md'>
                     Body text for whatever you'd like to type. Add main
                     <br/>takeaway points, quotes, anecdotes, of even a very
@@ -119,9 +119,9 @@ const Home = ({ user }) => {
                   </p>
                 </div>
               </div>
-              <div className='flex gap-4 my-4 md:gap-0 flex-wrap md:flex-nowrap w-full justify-around'>
+              <div className='flex gap-4 my-4 lg:gap-0 flex-wrap md:flex-nowrap w-full justify-around'>
                 <div className='transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 bg-[rgba(255,171,171,1)] hover:bg-[rgb(230,193,205)] px-3 py-4 rounded-lg' onMouseEnter={() => setMouseEnter("four")} onMouseLeave={() => setMouseEnter("zero")}>
-                  <p className='text-md md:text-lg mb-2'>Museum Tour</p>
+                  <p className='text-md lg:text-lg mb-2'>Museum Tour</p>
                   <p className='text-[rgba(130,130,130,1)] font-extralight text-xs md:text-md'>
                     Body text for whatever you'd like to type. Add main
                     <br/>takeaway points, quotes, anecdotes, of even a very
@@ -129,7 +129,7 @@ const Home = ({ user }) => {
                   </p>
                 </div>
                 <div className='transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 bg-[rgba(255,171,171,1)] hover:bg-[rgb(230,193,205)]  px-3 py-4 rounded-lg' onMouseEnter={() => setMouseEnter("five")} onMouseLeave={() => setMouseEnter("zero")}>
-                  <p className='text-md md:text-lg mb-2'>Cultural Excursion</p>
+                  <p className='text-md lg:text-lg mb-2'>Cultural Excursion</p>
                   <p className='text-[rgba(130,130,130,1)] font-extralight text-xs md:text-md'>
                     Body text for whatever you'd like to type. Add main
                     <br/>takeaway points, quotes, anecdotes, of even a very
@@ -137,7 +137,7 @@ const Home = ({ user }) => {
                   </p>
                 </div>
                 <div className='transition-all duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 bg-[rgba(255,171,171,1)] hover:bg-[rgb(230,193,205)]  px-3 py-4 rounded-lg' onMouseEnter={() => setMouseEnter("six")} onMouseLeave={() => setMouseEnter("zero")}> 
-                  <p className='text-md md:text-lg mb-2'>Community</p>
+                  <p className='text-md lg:text-lg mb-2'>Community</p>
                   <p className='text-[rgba(130,130,130,1)] font-extralight text-xs md:text-md'>
                     Body text for whatever you'd like to type. Add main
                     <br/>takeaway points, quotes, anecdotes, of even a very
