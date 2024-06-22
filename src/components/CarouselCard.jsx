@@ -1,12 +1,17 @@
 import React from 'react'
 
-const CarouselCard = ({ title, description, bg }) => {
+const CarouselCard = ({ slide }) => {
 
-    console.log(`bg-${bg}`)
+  const { title, description, bg } = slide
+    
+    console.log(bg)
+
   return (
-    <div className={`w-[535px] h-[462px] bg-[${bg}] border-2 border-black`}>
-        <p>{title}</p>
+    <div className={`w-[500px] h-[462px] bg-[${bg}] rounded-lg flex items-end justify-start`}>
+      <div className='p-10'>
+        <p className='text-2xl font-semibold'>{title}</p>
         <p>{description}</p>
+      </div>
     </div>
   )
 }

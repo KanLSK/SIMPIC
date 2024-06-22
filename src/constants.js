@@ -153,7 +153,7 @@ export const schedulesDay4 = [
 export const activities = [
     {
         title: "Welcome Dinner",
-        description: "Just a boring lecture",
+        description: "dinner on the cruise which everyone seem to be excited the most",
         bg: "rgba(217,217,217,1)"
     },
     {

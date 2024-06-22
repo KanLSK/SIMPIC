@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { schedulesDay1,schedulesDay2, schedulesDay3, schedulesDay4 } from "../constants";
+import { schedulesDay1,schedulesDay2, schedulesDay3, schedulesDay4, activities } from "../constants";
 import Carousel from "../components/Carousel";
+import CarouselCard from "../components/CarouselCard";
 
 const Program = () => {
   const [selectDay, setSelectDay] = useState({
@@ -21,6 +22,10 @@ const Program = () => {
       setSelectDay({ day1: false, day2: false, day3: false, day4: true });
     }
   };
+
+  const slides = activities.map((slide, index) => (
+    <CarouselCard key={index} slide={slide} />
+  ))
 
   return (
     <section className="mt-[10em] w-screen h-screen flex flex-col items-center font-inter">
@@ -185,11 +190,11 @@ const Program = () => {
           </div>
         </div>
       </div>
-      <div className="w-[75%] mt-[5em]">
+      <div className="w-[80%] mt-[5em]">
         <p className="text-6xl text-center w-full font-bold">Activities</p>
-        <div className="max-w-full">
-          <Carousel />
-        </div>
+        <div className="max-w-full snap-x snap-mandatory overflow-x-scroll h-screen flex flex-grow z-0 gap-4">
+            <Carousel slides={slides} />
+      </div>
       </div>
     </section>
   );

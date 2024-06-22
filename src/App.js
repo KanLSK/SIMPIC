@@ -18,7 +18,7 @@ const App = () => {
   const user = false
 
   return (
-    <div className='w-screen h-screen relative overflow-x-hidden'>
+    <div className='w-screen h-screen relative overflow-x-hidden scroll-smooth'>
       <BrowserRouter>
         <NavBar />
         <Routes>

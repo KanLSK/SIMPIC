@@ -1,50 +1,53 @@
-import React, { useState, useEffect } from 'react'
-import CarouselCard from './CarouselCard'
-import { activities } from '../constants'
+import React, { useRef } from "react";
 
-const Carousel = ({ autoSlide = false, autoSlideInterval = 3000 }) => {
+const Carousel = ({ slides }) => {
+  const carouselRef = useRef(null);
 
-    const [curr, setCurr] = useState(0)
+  const scrollNext = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollBy({
+        left: carouselRef.current.clientWidth,
+        behavior: "smooth",
+      });
+    }
+  };
 
-    const prev = () => setCurr((curr) => (curr === 0 ? activities.length - 1 : curr - 1))
+  const scrollPrev = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollBy({
+        left: -carouselRef.current.clientWidth,
+        behavior: "smooth",
+      });
+    }
+  };
 
-    const next = () => setCurr((curr) => (curr === activities.length - 1 ? 0 : curr + 1))
+  return (
+    <div className="relative w-full h-fit border-2 border-black overflow-hidden mt-[5em]">
+      <div
+        ref={carouselRef}
+        className="flex gap-4 overflow-x-hidden snap-x-mandatory"
+        style={{ scrollSnapType: "x mandatory" }}
+      >
+        {slides.map((slide, index) => (
+          <div key={index} className="flex-none snap-start">
+            {slide}
+          </div>
+        ))}
+      </div>
+      <button
+        className="absolute top-[25%] left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2"
+        onClick={scrollPrev}
+      >
+        Prev
+      </button>
+      <button
+        className="absolute top-[25%] right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2"
+        onClick={scrollNext}
+      >
+        Next
+      </button>
+    </div>
+  );
+};
 
-    useEffect(() => {
-        if (!autoSlide) return
-        const slideInterval = setInterval(next, autoSlideInterval)
-        return () => clearInterval(slideInterval)
-    }, [autoSlide, autoSlideInterval])
-
-
-    return (
-        <div className='overflow-hidden relative'>
-            <div className='flex transition-transform ease-out duration-500' style={{ transform: `translateX(-${curr * 100}%)` }}>
-            {activities.map((activity) => {
-              const { title, description, bg } = activity
-              return (
-                <CarouselCard key={title} title={title} description={description} bg={bg} />
-              )
-            })}
-            </div>
-            <div className="absolute inset-0 flex items-center justify-between p-4">
-                <button onClick={prev} className='p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white'>
-                    Left
-                </button>
-                <button onClick={next} className='p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white'>
-                    Right
-                </button>
-            </div>
-            <div className='absolute bottom-4 right-0 left-0'>
-                <div className='flex items-center justify-center gap-2'>
-                    {activities.map((s, i) => (
-                        <div key={i} className={`transition-all w-1.5 h-1.5 bg-white rounded-full  ${curr === i ? "p-0.5" : "bg-opacity-50"}`} />
-                    ))}
-                </div>
-            </div>
-        </div>
-
-    )
-}
-
-export default Carousel
+export default Carousel;
