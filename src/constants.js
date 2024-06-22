@@ -177,3 +177,61 @@ export const activities = [
         bg: "rgba(236,216,150,1)"
     }
 ]
+
+export const resources = [
+    {
+        type: 'COMPETITION',
+        title: 'Article Name - headline for an article'
+    },
+    {
+        type: 'REGISTRATION',
+        title: 'Article Name - headline for an article'
+    },
+    {
+        type: 'REGISTRATION',
+        title: 'Article Name - headline for an article'
+    },
+    {
+        type: 'GUIDEBOOK',
+        title: 'Article Name - headline for an article'
+    },
+    {
+        type: 'PANDEMOS',
+        title: 'Article Name - headline for an article'
+    },
+    {
+        type: 'PANDEMOS',
+        title: 'Article Name - headline for an article'
+    },
+    {
+        type: 'PANDEMOS',
+        title: 'Article Name - headline for an article'
+    },
+    {
+        type: 'PANDEMOS',
+        title: 'Article Name - headline for an article'
+    }
+]
+
+export const faqs = [
+    {
+        question: "what's the most frequently asked question?",
+        answer: "Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list",
+        id: "f1",
+    },
+    {
+        question: "what's the most frequently asked question?",
+        answer: "Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list",
+        id: "f2"
+    },
+    {
+        question: "what's the most frequently asked question?",
+        answer: "Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list",
+        id: "f3"
+    },
+    {
+        question: "what's the most frequently asked question?",
+        answer: "Answer the frequently asked question in a simple sentence, a longish paragraph, or even in a list",
+        id: "f4"
+    },
+]
