@@ -22,7 +22,7 @@ const Carousel = ({ slides }) => {
   };
 
   return (
-    <div className="relative w-full h-fit border-2 border-black overflow-hidden mt-[5em]">
+    <div className="relative w-full h-fit overflow-hidden mt-[5em]">
       <div
         ref={carouselRef}
         className="flex gap-4 overflow-x-hidden snap-x-mandatory"
@@ -35,13 +35,13 @@ const Carousel = ({ slides }) => {
         ))}
       </div>
       <button
-        className="absolute top-[25%] left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2"
+        className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2"
         onClick={scrollPrev}
       >
         Prev
       </button>
       <button
-        className="absolute top-[25%] right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2"
+        className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2"
         onClick={scrollNext}
       >
         Next

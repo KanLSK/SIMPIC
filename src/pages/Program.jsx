@@ -29,7 +29,7 @@ const Program = () => {
 
   return (
     <section className="mt-[10em] w-screen h-screen flex flex-col items-center font-inter">
-      <div className="w-[75%]">
+      <div className="w-[80%]">
         <p className="text-6xl text-center w-full font-bold">Time Table</p>
         <div className="mt-[5em]">
           <div className="flex gap-4">
